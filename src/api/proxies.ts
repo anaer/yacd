@@ -45,7 +45,7 @@ export async function requestDelayForProxy(
 export async function requestDelayForProxyGroup(
   apiConfig,
   name,
-  latencyTestUrl = 'http://www.gstatic.com/generate_202'
+  latencyTestUrl = 'http://www.gstatic.com/generate_204'
 ) {
   const { url, init } = getURLAndInit(apiConfig);
   const qs = `url=${encodeURIComponent(latencyTestUrl)}&timeout=2000`;
