@@ -7,6 +7,7 @@ import prettyBytes from '../misc/pretty-bytes';
 import { getClashAPIConfig } from '../store/app';
 import { connect } from './StateProvider';
 import s0 from './TrafficNow.module.scss';
+import { Link } from 'react-router-dom';
 
 const { useState, useEffect, useCallback } = React;
 
@@ -39,7 +40,11 @@ function TrafficNow({ apiConfig }) {
       </div>
       <div className={s0.sec}>
         <div>{t('Active Connections')}</div>
-        <div>{connNumber}</div>
+        <div>
+           <Link to="/connections">
+            {connNumber}
+           </Link>
+        </div>
       </div>
       <div className={s0.sec}>
         <div>{t('Memory Usage')}</div>
