@@ -39,7 +39,11 @@ function TrafficNow({ apiConfig }) {
       </div>
       <div className={s0.sec}>
         <div>{t('Active Connections')}</div>
-        <div>{connNumber}</div>
+        <div>
+           <Link to="/connections">
+            {connNumber}
+           </Link>
+        </div>
       </div>
       <div className={s0.sec}>
         <div>{t('Memory Usage')}</div>
