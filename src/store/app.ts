@@ -166,7 +166,7 @@ const defaultState: StateApp = {
   // type { [string]: boolean }
   collapsibleIsOpen: {},
   // how proxies are sorted in a group or provider @see Settings.tsx options
-  proxySortBy: 'LatencyAsc',
+  proxySortBy: 'Natural',
   hideUnavailableProxies: true,
   autoCloseOldConns: false,
   logStreamingPaused: false,
